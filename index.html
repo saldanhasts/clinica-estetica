@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica de Estética | Beleza e Bem-estar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="\css\style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Clínica Bella</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="menu">
+        <a href="#home">Home</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section id="home" class="section">
+      <h2>Bem-vinda à Clínica Bella</h2>
+      <p>
+        Especialistas em realçar sua beleza com técnicas modernas, seguras e
+        personalizadas.
+      </p>
+    </section>
+
+    <section id="servicos" class="section">
+      <h2>Nossos Serviços</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Depilação com Cera</h3>
+          <p>
+            Remoção eficaz de pelos com cera morna, deixando a pele lisa e
+            hidratada.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Tratamento de Estrias</h3>
+          <p>
+            Protocolos estéticos para reduzir visivelmente a aparência das
+            estrias.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Depilação a Laser</h3>
+          <p>
+            Eliminação duradoura dos pelos com tecnologia avançada e segura.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Micropigmentação</h3>
+          <p>
+            Design e preenchimento de sobrancelhas para valorizar sua expressão
+            facial.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Limpeza de Pele</h3>
+          <p>
+            Procedimento profundo para remoção de impurezas e revitalização da
+            pele.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Opções Combo</h3>
+          <p>
+            Realiza até 3 procedimentos, remoção de impurezas, revitalização da
+            pele entre outros.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <h2>Sobre Nós</h2>
+      <p>
+        Somos uma clínica dedicada à estética e autoestima. Atuamos com
+        profissionais capacitados e protocolos personalizados. Nosso objetivo é
+        cuidar de você com carinho, tecnologia e resultados reais.
+      </p>
+    </section>
+
+    <section id="contato" class="section">
+      <h2>Fale Conosco</h2>
+      <form class="contact-form" action="#" method="POST">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Mensagem..." rows="5" required></textarea>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+      <h3 style="margin-top: 3rem">Localização</h3>
+      <p>Rua das Estéticas, 123 - Belo Horizonte, MG</p>
+      <iframe
+        src="https://maps.google.com/maps?q=-19.9191,-43.9386&z=15&output=embed"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Clínica Bella. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="\js\script.js"></script>
+  </body>
+</html>
