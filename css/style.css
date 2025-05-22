@@ -1,6 +1,6 @@
 :root {
   --primary: #fd7d7b;
-  --secondary: #fff2f2;
+  --secondary: #ffd5d5;
   --text: #333;
 }
 
@@ -10,6 +10,42 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
+/* ===== Topo de Contato ===== */
+.top-bar {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.top-bar .left,
+.top-bar .right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: opacity 0.3s;
+}
+
+.top-bar a:hover {
+  opacity: 0.8;
+}
+
+.top-bar i {
+  font-size: 1rem;
+}
+
 
 body {
   background: white;
@@ -72,7 +108,7 @@ nav a:hover {
 
 .section h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin: 2rem 0 1.5rem 0;
   color: var(--primary);
 }
 
@@ -152,69 +188,75 @@ iframe {
   margin-top: 2rem;
 }
 
-/* ===== Carrossel de Depoimentos (Formato Balão Google) ===== */
-.testimonials {
-  background: var(--secondary);
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.testimonials h2 {
-  color: var(--primary);
-  margin-bottom: 2rem;
-}
-
+/* ===== Depoimentos ===== */
 .testimonial-container {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
   gap: 2rem;
-  padding-bottom: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
-.testimonial {
-  background: #fff;
-  border-radius: 16px;
-  padding: 2rem;
-  min-width: 300px;
-  flex: 0 0 auto;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-  scroll-snap-align: start;
+.testimonial-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cliente-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #f7cfcf;
+}
+
+.bubble {
+  background-color: #f7f7f7;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem 1rem 1rem 0.3rem;
   position: relative;
+  margin-bottom: 1rem;
 }
 
-.testimonial::after {
+.bubble::after {
   content: "";
   position: absolute;
-  bottom: -15px;
-  left: 40px;
-  border-width: 15px 15px 0;
-  border-style: solid;
-  border-color: #fff transparent transparent transparent;
+  left: 20px;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #f7f7f7;
+  border-bottom: 0;
+  margin-left: -5px;
 }
 
-.testimonial p {
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.testimonial span {
+.testimonial-card h4 {
+  margin: 0;
   font-weight: 600;
-  color: var(--primary);
-  display: block;
-  margin-top: 0.5rem;
+  color: #333;
 }
+
 
 /* ===== Botão WhatsApp Flutuante ===== */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
-  color: white;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,8 +271,8 @@ iframe {
 }
 
 .whatsapp-button img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 }
 
 /* ===== Rodapé ===== */

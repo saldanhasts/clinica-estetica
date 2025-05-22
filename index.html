@@ -8,9 +8,31 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <!-- Topo de Contato -->
+    <div class="top-bar">
+      <div class="left">
+        <a href="https://wa.me/5531973318300" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> (31) 9 7331-8300
+        </a>
+        <a href="mailto:contato@clinicabella.com">
+          <i class="fa-regular fa-envelope"></i> contato@clinicabella.com
+        </a>
+        <a href="https://instagram.com/clinicabella" target="_blank">
+          <i class="fa-brands fa-instagram"></i> @clinicabella
+        </a>
+      </div>
+      <div class="right">
+      </div>
+    </div>
+
+    <!-- Cabeçalho Principal -->
     <header>
       <div class="logo">Clínica Bella</div>
       <div class="menu-toggle" onclick="toggleMenu()">
@@ -27,6 +49,7 @@
       </nav>
     </header>
 
+    <!-- Seção Home -->
     <section id="home" class="section">
       <div class="content">
         <h2>Bem-vinda à Clínica Bella</h2>
@@ -34,13 +57,13 @@
           Especialistas em realçar sua beleza com técnicas modernas, seguras e
           personalizadas.
         </p>
-
         <button class="clique-whatsapp">
           <a href="#contato" class="btn">Agendar Atendimento</a>
         </button>
       </div>
     </section>
 
+    <!-- Seção Serviços -->
     <section id="servicos" class="section">
       <h2>Nossos Serviços</h2>
       <div class="services">
@@ -88,6 +111,7 @@
       </div>
     </section>
 
+    <!-- Seção Sobre -->
     <section id="sobre" class="section">
       <h2>Sobre Nós</h2>
       <p>
@@ -97,60 +121,69 @@
       </p>
     </section>
 
+    <!-- Seção Depoimentos -->
     <section id="depoimentos" class="section">
-      <h2>Depoimentos</h2>
-      <div class="testimonial-slider">
-        <div class="testimonial active">
-          <p>"Atendimento maravilhoso! Saí daqui me sentindo outra pessoa."</p>
-          <h4>Ana Souza</h4>
-        </div>
-        <div class="testimonial">
-          <p>
-            "Profissionais incríveis, muito atenciosas. Amei cada detalhe do
-            atendimento."
-          </p>
-          <h4>Juliana Mendes</h4>
-        </div>
-        <div class="testimonial">
-          <p>
-            "Fiz depilação a laser e limpeza de pele. Resultados perfeitos e
-            ambiente aconchegante."
-          </p>
-          <h4>Fernanda Lima</h4>
-        </div>
+  <h2>Depoimentos</h2>
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      <img src="img/cliente1.jpg" alt="Ana Souza" class="cliente-img" />
+      <div class="bubble">
+        <p>"Atendimento maravilhoso! Saí daqui me sentindo outra pessoa. Super indico!"</p>
       </div>
-    </section>
+      <h4>Ana Souza</h4>
+    </div>
 
-    <section id="contato" class="section">
-      <h2>Fale Conosco</h2>
-      <form class="contact-form" action="#" method="POST">
+    <div class="testimonial-card">
+      <img src="img/cliente2.jpg" alt="Juliana Mendes" class="cliente-img" />
+      <div class="bubble">
+        <p>"Profissionais incríveis, muito atenciosas. Amei cada detalhe do atendimento."</p>
+      </div>
+      <h4>Juliana Mendes</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="img/cliente3.jpg" alt="Fernanda Lima" class="cliente-img" />
+      <div class="bubble">
+        <p>"Fiz depilação a laser e limpeza de pele. Resultados perfeitos e ambiente aconchegante."</p>
+      </div>
+      <h4>Fernanda Lima</h4>
+    </div>
+  </div>
+</section>
+
+
+<!-- Seção Contato -->
+<!-- Botão WhatsApp flutuante -->
+<a
+  href="https://wa.me/5531973318300"
+  class="whatsapp-button"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img class="wpp" src="img/wppIcon.png" alt="WhatsApp" />
+</a>
+<section id="contato" class="section">
+    <h2>Fale Conosco</h2>
+    <form class="contact-form" action="#" method="POST">
         <input type="text" placeholder="Seu nome" required />
         <input type="email" placeholder="Seu e-mail" required />
         <textarea placeholder="Mensagem..." rows="5" required></textarea>
         <button type="submit">Enviar mensagem</button>
-      </form>
-      <h3 style="margin-top: 3rem">Localização</h3>
-      <p>Rua das Estéticas, 123 - Belo Horizonte, MG</p>
-      <iframe
-        src="https://maps.google.com/maps?q=-19.9191,-43.9386&z=15&output=embed"
-        allowfullscreen
-        loading="lazy"
-      ></iframe>
-    </section>
+    </form>
+    <h3 style="margin-top: 3rem">Localização</h3>
+    <p>Rua das Estéticas, 123 - Belo Horizonte, MG</p>
+    <iframe
+    src="https://maps.google.com/maps?q=-19.9191,-43.9386&z=15&output=embed"
+    allowfullscreen
+    loading="lazy"
+    ></iframe>
+</section>
 
+    <!-- Rodapé -->
     <footer>
       <p>&copy; 2025 Clínica Bella. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Botão WhatsApp flutuante -->
-    <a
-      href="https://wa.me/5531973318300"
-      class="whatsapp-float"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src="https://i.imgur.com/ryESu3B.png" alt="WhatsApp" />
-    </a>
 
     <script src="/js/script.js"></script>
   </body>
