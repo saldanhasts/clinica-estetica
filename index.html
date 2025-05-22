@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="\css\style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <header>
@@ -22,16 +22,23 @@
         <a href="#home">Home</a>
         <a href="#servicos">Serviços</a>
         <a href="#sobre">Sobre</a>
+        <a href="#depoimentos">Depoimentos</a>
         <a href="#contato">Contato</a>
       </nav>
     </header>
 
     <section id="home" class="section">
-      <h2>Bem-vinda à Clínica Bella</h2>
-      <p>
-        Especialistas em realçar sua beleza com técnicas modernas, seguras e
-        personalizadas.
-      </p>
+      <div class="content">
+        <h2>Bem-vinda à Clínica Bella</h2>
+        <p>
+          Especialistas em realçar sua beleza com técnicas modernas, seguras e
+          personalizadas.
+        </p>
+
+        <button class="clique-whatsapp">
+          <a href="#contato" class="btn">Agendar Atendimento</a>
+        </button>
+      </div>
     </section>
 
     <section id="servicos" class="section">
@@ -74,8 +81,8 @@
         <div class="service">
           <h3>Opções Combo</h3>
           <p>
-            Realiza até 3 procedimentos, remoção de impurezas, revitalização da
-            pele entre outros.
+            Realize até 3 procedimentos, remoção de impurezas, revitalização da
+            pele, entre outros.
           </p>
         </div>
       </div>
@@ -88,6 +95,30 @@
         profissionais capacitados e protocolos personalizados. Nosso objetivo é
         cuidar de você com carinho, tecnologia e resultados reais.
       </p>
+    </section>
+
+    <section id="depoimentos" class="section">
+      <h2>Depoimentos</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <p>"Atendimento maravilhoso! Saí daqui me sentindo outra pessoa."</p>
+          <h4>Ana Souza</h4>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Profissionais incríveis, muito atenciosas. Amei cada detalhe do
+            atendimento."
+          </p>
+          <h4>Juliana Mendes</h4>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Fiz depilação a laser e limpeza de pele. Resultados perfeitos e
+            ambiente aconchegante."
+          </p>
+          <h4>Fernanda Lima</h4>
+        </div>
+      </div>
     </section>
 
     <section id="contato" class="section">
@@ -111,6 +142,16 @@
       <p>&copy; 2025 Clínica Bella. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="\js\script.js"></script>
+    <!-- Botão WhatsApp flutuante -->
+    <a
+      href="https://wa.me/5531973318300"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="https://i.imgur.com/ryESu3B.png" alt="WhatsApp" />
+    </a>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>
