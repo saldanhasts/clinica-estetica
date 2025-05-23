@@ -467,6 +467,10 @@ footer a:hover {
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
   /* Menu Mobile (Padrão Fechado) */
 #menu {
   display: flex;
