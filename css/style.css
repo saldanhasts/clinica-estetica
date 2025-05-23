@@ -107,9 +107,10 @@ nav a:hover {
 }
 
 .section h1 {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
   margin: 2rem 0 1.5rem 0;
   color: var(--primary);
+  text-align: center;
 }
 .section h2 {
   font-size: 1.7rem;
@@ -312,6 +313,68 @@ footer a:hover {
   color: #ff6361;
 }
 
+/* Teste da imagem */
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.service {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.service-image {
+  width: 30%;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.service-content {
+  width: 70%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-content h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.service-content p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.service {
+  min-height: 120px; /* Antes era 150px */
+}
+
+.service-image {
+  width: 100px; /* Antes era 150px */
+}
+
+.service-content h3 {
+  font-size: 1.4rem; /* Antes 1.4rem */
+}
+
+.service-content p {
+  font-size: 1rem; /* Se estava menor, pode subir para isso */
+}
+
+
 /* ===== Responsivo ===== */
 @media screen and (max-width: 768px) {
   nav {
@@ -360,4 +423,26 @@ footer a:hover {
 .section p {
     text-align: center;
 }
+
+.service {
+    flex-direction: column;
+  }
+
+  .service-image,
+  .service-content {
+    width: 100%;
+  }
+
+  .service-image {
+    height: 180px;
+  }
+
+  .service-image img {
+    height: 100%;
+  }
+
+  .service-content {
+    padding: 1rem;
+  }
+
 }

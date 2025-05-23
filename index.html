@@ -13,6 +13,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="preload"
+      href="fonts/nome-da-fonte.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
   </head>
   <body>
     <!-- Topo de Contato -->
@@ -28,8 +35,7 @@
           <i class="fa-brands fa-instagram"></i> @clinicabella
         </a>
       </div>
-      <div class="right">
-      </div>
+      <div class="right"></div>
     </div>
 
     <!-- Cabeçalho Principal -->
@@ -52,7 +58,7 @@
     <!-- Seção Home -->
     <section id="home" class="section">
       <div class="content">
-        <h2>Bem-vinda à Clínica Bella</h2>
+        <h1>Bem-vinda à Clínica Bella</h1>
         <p>
           Especialistas em realçar sua beleza com técnicas modernas, seguras e
           personalizadas.
@@ -68,46 +74,87 @@
       <h2>Nossos Serviços</h2>
       <div class="services">
         <div class="service">
-          <h3>Depilação com Cera</h3>
-          <p>
-            Remoção eficaz de pelos com cera morna, deixando a pele lisa e
-            hidratada.
-          </p>
+          <div class="service-image">
+            <img src="img/cera.jpg" alt="Depilação com Cera" />
+          </div>
+          <div class="service-content">
+            <h3>Depilação com Cera</h3>
+            <p>
+              Remoção eficaz de pelos com cera morna, deixando a pele lisa e
+              hidratada.
+            </p>
+          </div>
         </div>
+
         <div class="service">
-          <h3>Tratamento de Estrias</h3>
-          <p>
-            Protocolos estéticos para reduzir visivelmente a aparência das
-            estrias.
-          </p>
+          <div class="service-image">
+            <img src="img/estria.jpg" alt="Tratamento de Estrias" />
+          </div>
+
+          <div class="service-content">
+            <h3>Tratamento de Estrias</h3>
+            <p>
+              Protocolos estéticos para reduzir visivelmente a aparência das
+              estrias.
+            </p>
+          </div>
         </div>
+
         <div class="service">
-          <h3>Depilação a Laser</h3>
-          <p>
-            Eliminação duradoura dos pelos com tecnologia avançada e segura.
-          </p>
+          <div class="service-image">
+            <img src="img/laser.jpg" alt="Depilação a Laser" />
+          </div>
+
+          <div class="service-content">
+            <h3>Depilação a Laser</h3>
+            <p>
+              Eliminação duradoura dos pelos com tecnologia avançada e segura.
+            </p>
+          </div>
         </div>
+
         <div class="service">
-          <h3>Micropigmentação</h3>
-          <p>
-            Design e preenchimento de sobrancelhas para valorizar sua expressão
-            facial.
-          </p>
+          <div class="service-image">
+            <img src="img/micro.jpg" alt="Micropigmentação" />
+          </div>
+
+          <div class="service-content">
+            <h3>Micropigmentação</h3>
+            <p>
+              Design e preenchimento de sobrancelhas para valorizar sua
+              expressão facial.
+            </p>
+          </div>
         </div>
+
         <div class="service">
-          <h3>Limpeza de Pele</h3>
-          <p>
-            Procedimento profundo para remoção de impurezas e revitalização da
-            pele.
-          </p>
+          <div class="service-image">
+            <img src="img/pele.jpg" alt="Limpeza de Pele" />
+          </div>
+
+          <div class="service-content">
+            <h3>Limpeza de Pele</h3>
+            <p>
+              Procedimento profundo para remoção de impurezas e revitalização da
+              pele.
+            </p>
+          </div>
         </div>
+
         <div class="service">
-          <h3>Opções Combo</h3>
-          <p>
-            Realize até 3 procedimentos, remoção de impurezas, revitalização da
-            pele, entre outros.
-          </p>
+          <div class="service-image">
+            <img src="img/combo.jpg" alt="Opções Combo" />
+          </div>
+
+          <div class="service-content">
+            <h3>Opções Combo</h3>
+            <p>
+              Realize até 3 procedimentos, remoção de impurezas, revitalização
+              da pele, entre outros.
+            </p>
+          </div>
         </div>
+        
       </div>
     </section>
 
@@ -123,68 +170,90 @@
 
     <!-- Seção Depoimentos -->
     <section id="depoimentos" class="section">
-  <h2>Depoimentos</h2>
-  <div class="testimonial-container">
-    <div class="testimonial-card">
-      <img src="img/cliente1.jpg" alt="Ana Souza" class="cliente-img" />
-      <div class="bubble">
-        <p>"Atendimento maravilhoso! Saí daqui me sentindo outra pessoa. Super indico!"</p>
+      <h2>Depoimentos</h2>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <img
+            src="img/cliente1.jpg"
+            loading="lazy"
+            alt="Ana Souza"
+            class="cliente-img"
+          />
+          <div class="bubble">
+            <p>
+              "Atendimento maravilhoso! Saí daqui me sentindo outra pessoa.
+              Super indico!"
+            </p>
+          </div>
+          <h4>Ana Souza</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <img
+            src="img/cliente2.jpg"
+            loading="lazy"
+            alt="Juliana Mendes"
+            class="cliente-img"
+          />
+          <div class="bubble">
+            <p>
+              "Profissionais incríveis, muito atenciosas. Amei cada detalhe do
+              atendimento."
+            </p>
+          </div>
+          <h4>Juliana Mendes</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <img
+            src="img/cliente3.jpg"
+            loading="lazy"
+            alt="Fernanda Lima"
+            class="cliente-img"
+          />
+          <div class="bubble">
+            <p>
+              "Fiz depilação a laser e limpeza de pele. Resultados perfeitos e
+              ambiente aconchegante."
+            </p>
+          </div>
+          <h4>Fernanda Lima</h4>
+        </div>
       </div>
-      <h4>Ana Souza</h4>
-    </div>
+    </section>
 
-    <div class="testimonial-card">
-      <img src="img/cliente2.jpg" alt="Juliana Mendes" class="cliente-img" />
-      <div class="bubble">
-        <p>"Profissionais incríveis, muito atenciosas. Amei cada detalhe do atendimento."</p>
-      </div>
-      <h4>Juliana Mendes</h4>
-    </div>
-
-    <div class="testimonial-card">
-      <img src="img/cliente3.jpg" alt="Fernanda Lima" class="cliente-img" />
-      <div class="bubble">
-        <p>"Fiz depilação a laser e limpeza de pele. Resultados perfeitos e ambiente aconchegante."</p>
-      </div>
-      <h4>Fernanda Lima</h4>
-    </div>
-  </div>
-</section>
-
-
-<!-- Seção Contato -->
-<!-- Botão WhatsApp flutuante -->
-<a
-  href="https://wa.me/5531973318300"
-  class="whatsapp-button"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <img class="wpp" src="img/wppIcon.png" alt="WhatsApp" />
-</a>
-<section id="contato" class="section">
-    <h2>Fale Conosco</h2>
-    <form class="contact-form" action="#" method="POST">
+    <!-- Seção Contato -->
+    <!-- Botão WhatsApp flutuante -->
+    <a
+      href="https://wa.me/5531973318300"
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img class="wpp" src="img/wppIcon.png" alt="WhatsApp" />
+    </a>
+    <section id="contato" class="section">
+      <h2>Fale Conosco</h2>
+      <form class="contact-form" action="#" method="POST">
         <input type="text" placeholder="Seu nome" required />
         <input type="email" placeholder="Seu e-mail" required />
         <textarea placeholder="Mensagem..." rows="5" required></textarea>
         <button type="submit">Enviar mensagem</button>
-    </form>
-    <h3 style="margin-top: 3rem">Localização</h3>
-    <p>Rua das Estéticas, 123 - Belo Horizonte, MG</p>
-    <iframe
-    src="https://maps.google.com/maps?q=-19.9191,-43.9386&z=15&output=embed"
-    allowfullscreen
-    loading="lazy"
-    ></iframe>
-</section>
+      </form>
+      <h3 style="margin-top: 3rem">Localização</h3>
+      <p>Rua das Estéticas, 123 - Belo Horizonte, MG</p>
+      <iframe
+        src="https://maps.google.com/maps?q=-19.9191,-43.9386&z=15&output=embed"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </section>
 
     <!-- Rodapé -->
     <footer>
       <p>&copy; 2025 Clínica Bella. Todos os direitos reservados.</p>
     </footer>
 
-
-    <script src="/js/script.js"></script>
+    <script src="/js/script.js" defer></script>
   </body>
 </html>

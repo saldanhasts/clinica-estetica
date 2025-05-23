@@ -12,6 +12,7 @@ let startX;
 let scrollLeft;
 
 if (container) {
+  // Drag manual
   container.addEventListener('mousedown', (e) => {
     isDown = true;
     container.classList.add('active');
@@ -37,7 +38,7 @@ if (container) {
     container.scrollLeft = scrollLeft - walk;
   });
 
-  // Scroll automático opcional (remove se não quiser)
+  // Scroll automático
   setInterval(() => {
     if (container.scrollWidth - container.clientWidth === container.scrollLeft) {
       container.scrollTo({ left: 0, behavior: 'smooth' });
