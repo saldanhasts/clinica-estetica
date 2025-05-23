@@ -46,4 +46,20 @@ if (container) {
       container.scrollBy({ left: 320, behavior: 'smooth' });
     }
   }, 5000);
+
+  /* Script para fechar o menu da busca mobile */
+  function toggleMenu() {
+  const nav = document.getElementById("menu");
+  nav.classList.toggle("open");
+}
+
+// Fecha o menu ao clicar em um link (modo mobile)
+document.querySelectorAll('#menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.getElementById("menu");
+    if (nav.classList.contains('open')) {
+      nav.classList.remove('open');
+    }
+  });
+});
 }

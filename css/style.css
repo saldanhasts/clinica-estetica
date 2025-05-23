@@ -374,6 +374,14 @@ footer a:hover {
   font-size: 1rem; /* Se estava menor, pode subir para isso */
 }
 
+.content button.clique-whatsapp {
+    display: flex;
+    margin: 20px auto !important;
+}
+
+.section p {
+    text-align: center;
+}
 
 /* ===== Responsivo ===== */
 @media screen and (max-width: 768px) {
@@ -445,4 +453,36 @@ footer a:hover {
     padding: 1rem;
   }
 
+  .section h2 {
+  font-size: 1.7rem;
+  margin: 3.2rem 0 1.5rem 0;
+  color: var(--primary);
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 1.8rem;
+  margin: 3rem 0 1.5rem 0;
+  color: var(--primary);
+  text-align: center;
+}
+
+  /* Menu Mobile (Padrão Fechado) */
+#menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: max-height 0.4s ease, opacity 0.7s ease;
+}
+
+/* Menu Aberto */
+#menu.open {
+  max-height: 500px; /* Ajuste conforme necessário */
+  opacity: 1;
+  pointer-events: auto;
+}
 }
