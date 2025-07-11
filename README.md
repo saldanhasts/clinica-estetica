@@ -4,7 +4,7 @@
 
 <img width="205" height="446" alt="clinica-estetica" src="https://github.com/user-attachments/assets/9abca306-99bd-46cf-8aad-97aec281e894" />
 
-Site desenvolvido por mim, com foco em design moderno, boa navegação e experiência visual atrativa para clínicas de estética.
+Site desenvolvido com foco em design moderno, boa navegação e experiência visual atrativa para clínicas de estética.
 
 ## 🌐 Acesse o projeto online
 [https://clinica-estetica-nine.vercel.app/](https://clinica-estetica-nine.vercel.app/)
